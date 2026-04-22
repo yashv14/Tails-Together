@@ -1,3 +1,6 @@
+[Demo.zip](https://github.com/user-attachments/files/26977187/Demo.zip)
+
+
 # Tails-Together - Pet Clinic Management System
 
 A full-stack MVC web application designed to manage veterinary appointments. Built with a focus on native database interactions and clean, responsive UI.
@@ -19,3 +22,13 @@ A full-stack MVC web application designed to manage veterinary appointments. Bui
 2. Run the SQL script provided in the `/db` folder to initialize the MySQL database.
 3. Update the `DBUtil.java` file with your MySQL credentials.
 4. Deploy the project to an Apache Tomcat server.
+
+https://github.com/user-attachments/assets/ae7a6ec3-5ed2-4649-91cc-8e6656146953
+
+
+
+https://github.com/user-attachments/assets/a4ee5d72-0ff9-4743-9f3b-837b90a97dd4
+
+
+
+
