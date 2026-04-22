@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+body {
+    background-color: #f4f7fc; /* Very light blue-grey background */
+}
+
+/* --- 1. HERO HEADER (The Purple Banner) --- */
+.hero-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple Gradient */
+    height: 280px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(118, 75, 162, 0.3);
+}
+
+.hero-title { font-size: 36px; font-weight: 700; margin-bottom: 5px; }
+.hero-subtitle { font-size: 16px; opacity: 0.9; font-weight: 400; }
+
+/* Decoration Circles in Background */
+.circle-decor {
+    position: absolute;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+.c1 { width: 200px; height: 200px; top: -50px; left: -50px; }
+.c2 { width: 100px; height: 100px; bottom: 50px; right: 50px; }
+
+/* --- 2. MAIN CONTENT CONTAINER --- */
+.dashboard-container {
+    max-width: 1000px;
+    margin: -100px auto 0; /* This pulls the cards UP into the purple header */
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+/* --- 3. GRID LAYOUT --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* --- 4. MODERN CARD STYLES --- */
+.menu-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none; /* Removes blue link underline */
+    color: #444;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.5);
+    position: relative;
+    overflow: hidden;
+    display: block; /* Ensures it acts like a box, not text */
+}
+
+/* Hover Effect: Lift up + Shadow glow */
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(118, 75, 162, 0.15);
+}
+
+/* Icon Styling */
+.card-icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin: 0 auto 20px;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover .card-icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Specific Colors for each card icon */
+.icon-purple { background: #e0e7ff; color: #667eea; }
+.icon-orange { background: #fff3e0; color: #ff9800; }
+.icon-red    { background: #ffebee; color: #e53935; }
+
+/* Text Styling */
+.card-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; color: #2d3748; }
+.card-desc { font-size: 14px; color: #718096; line-height: 1.5; }
