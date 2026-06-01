@@ -3,8 +3,8 @@
 -- ========================================================
 
 -- 1. Create the database and switch to it
-CREATE DATABASE IF NOT EXISTS pet_clinic;
-USE pet_clinic;
+-- CREATE DATABASE IF NOT EXISTS pet_clinic;
+-- USE pet_clinic;
 
 -- 2. Clear out old tables if they exist (Useful for resetting the project)
 DROP TABLE IF EXISTS appointments;
